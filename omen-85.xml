@@ -1,0 +1,165 @@
+<HBProfile>
+   <!--
+      PROFILE EXPECTATIONS:
+         * When using this profile, be certain to set the HonorBuddy bot to (select only one):
+                ( ) Grinding / Mixed
+                (*) Questing
+                ( ) PvP
+   
+         * This profile is appropriate for (check all that apply):
+                [X] Alliance   [ ] Achievement
+                [ ] Horde      [ ] Farming
+                               [X] Leveling
+                               [ ] PvP
+                               [X] Questing
+                               [ ] Reputation
+                               [ ] Seasonal
+   
+   
+         * An explanation of <ForceMail> and <ProtectedItems> usage is here...
+               http://www.buddyforum.de/mediawiki/index.php?title=HonorBuddy:_About_ProtectedItems_and_ForceMail
+   
+         * DO NOT INCLUDE a <ForceMail> element in a profile!
+           Instead, each user should populate his <hb_install_dir>/ForceMail.xml file.
+           The Buddy Wiki provides a robust sample <ForceMail> element here...
+               http://www.buddyforum.de/mediawiki/index.php?title=Honorbuddy:_A_prototypical_ForceMail_Element
+  
+         * DO NOT INCLUDE a <ProtectedItems> element in a profile!
+           Instead, each user should populate his <hb_install_dir>/Protected Items.xml file.
+           The Buddy Wiki provides a robust sample <ProtectedItems> element here...
+               http://www.buddyforum.de/mediawiki/index.php?title=Honorbuddy:_A_prototypical_ProtectedItems_Element
+   
+    -->
+   <Name>das_omen and the 90s</Name>
+   <MinLevel>85</MinLevel>
+   <MaxLevel>90</MaxLevel>
+   
+   <MinDurability>0.4</MinDurability>
+   <MinFreeBagSlots>1</MinFreeBagSlots>
+    
+   <MailGrey>False</MailGrey>
+   <MailWhite>False</MailWhite>
+   <MailGreen>True</MailGreen>
+   <MailBlue>True</MailBlue>
+   <MailPurple>True</MailPurple>
+   
+   <SellGrey>True</SellGrey>
+   <SellWhite>True</SellWhite>
+   <SellGreen>False</SellGreen>
+   <SellBlue>False</SellBlue>
+   <SellPurple>False</SellPurple>
+   
+   <TargetElites>False</TargetElites>
+   
+   <AvoidMobs>
+<!-- 
+       <Mob Name="Fel Reaver" Entry="18733" />
+ -->
+   </AvoidMobs>
+   
+   <Blackspots>
+       <!--A tree it gets stuck on in the orchard-->
+<!-- 
+       <Blackspot X="-8895.609" Y="-428.6633" Z="66.3858" Radius="21.39053" />
+ -->
+   </Blackspots>
+   
+   <ContinentID>0</ContinentID> <!--Azeroth; (optional tag, but good practice to include) -->
+   
+   <Mailboxes>
+<!-- 
+        <Mailbox  X="-9458.524" Y="47.16144" Z="56.60526" /> <!~~ Goldshire ~~>
+ -->
+   </Mailboxes>
+   
+   <Vendors>      
+<!-- 
+       <Vendor Name="Bruder Danil" Entry="152" Type="Ammo" X="-8901.59" Y="-112.716" Z="81.84828" />
+       <Vendor Name="Godric Rothgar" Entry="1213" Type="Repair" X="-8898.231" Y="-119.8379" Z="81.83493" />
+       <Vendor Name="Khelden Bremen" Entry="198" Type="Train" TrainClass="Mage" X="-8851.57" Y="-188.234" Z="89.31455" />
+       <Vendor Name="Priesterin Anetta" Entry="375" Type="Train" TrainClass="Priest" X="-8853.587" Y="-193.336" Z="81.9331" />
+       <Vendor Name="Drusilla La Salle" Entry="459" Type="Train" TrainClass="Warlock" X="-8926.743" Y="-195.5889" Z="80.58859" />
+       <Vendor Name="Jorik Kerridan" Entry="915" Type="Train" TrainClass="Rogue" X="-8863.468" Y="-210.9055" Z="80.57187" />
+       <Vendor Name="Bruder Sammuel" Entry="925" Type="Train" TrainClass="Paladin" X="-8914.567" Y="-215.0163" Z="82.11676" />
+       <Vendor Name="Llane Beshere" Entry="911" Type="Train" TrainClass="Warrior" X="-8918.364" Y="-208.4109" Z="82.12556" />
+ -->
+   </Vendors>
+   
+   <!-- Quest Overrides -->
+   <!-- Example of a **Kill task** where one type of mob may be found at several locations -->
+   <Quest Id="10079" Name="When This Mine's a-Rockin'">
+       <Objective Type="KillMob" MobId="18827" KillCount="12">
+           <Hotspots>
+               <Hotspot X="-672.2278" Y="2801.927" Z="45.3812" />
+               <Hotspot X="-684.1078" Y="2748.352" Z="39.22673" />
+               <Hotspot X="-744.2477" Y="2725.42" Z="23.91495" />
+               <Hotspot X="-682.1981" Y="2700.94" Z="1.856556" />
+               <Hotspot X="-647.623" Y="2649.661" Z="-3.224328" />
+           </Hotspots>
+       </Objective>
+   </Quest>
+  
+   <!-- Example of a **Collection task**, where the desired item can come from one of several types of mobs -->
+   <Quest Id="9802" Name="Plants of Zangarmarsh">
+       <Objective Type="CollectItem" ItemId="24401" CollectCount="10">
+           <CollectFrom>
+               <Mob Name="Umbraglow Stinger" Id="18132" />
+               <Mob Name="Marshfang Ripper" Id="18130" />
+               <Mob Name="Young Sporebat" Id="20387" />
+               <Mob Name="Fen Strider" Id="18134" />
+           </CollectFrom>
+           <Hotspots>
+               <Hotspot X="-351.0574" Y="5513.116" Z="22.90413" />
+               <Hotspot X="-375.2082" Y="5411.949" Z="17.79491" />
+               <Hotspot X="-496.7541" Y="5412.942" Z="21.87777" />
+               <Hotspot X="-609.1725" Y="5485.776" Z="22.48844" />
+               <Hotspot X="-602.58" Y="5336.471" Z="20.24081" />
+               <Hotspot X="-756.1357" Y="5499.922" Z="23.66503" />
+               <Hotspot X="-846.0773" Y="5528.859" Z="22.693" />
+               <Hotspot X="-840.6029" Y="5623.586" Z="22.80483" />
+           </Hotspots>
+       </Objective>
+   </Quest>
+  
+   <!-- Example of a **Collection task**, where the desired Item comes from a particular world Object -->
+   <Quest Id="9788" Name="A Damp, Dark Place">
+       <Objective Type="CollectItem" ItemId="24411" CollectCount="1">
+           <CollectFrom>
+               <GameObject Id="182122" Name="Ikeyen's Belongings" />
+           </CollectFrom>
+           <Hotspots>
+               <Hotspot X="-1345.478" Y="5929.329" Z="11.10683" />
+           </Hotspots>
+       </Objective>
+   </Quest>
+   <!-- End of Quest Overrides -->
+   
+   
+   <QuestOrder>
+       <PickUp QuestName="When This Mine's a-Rockin'" QuestId="10079" GiverName="Foreman Biggums" GiverId="16837" />
+       <Objective QuestName="When This Mine's a-Rockin'" QuestId="10079" Type="KillMob" MobId="18827" KillCount="12" />
+       <TurnIn QuestName="When This Mine's a-Rockin'" QuestId="10079" TurnInName="Foreman Biggums" TurnInId="16837" />
+   
+       <SetGrindArea>
+           <GrindArea>          
+               <TargetMinLevel>60</TargetMinLevel>
+               <TargetMaxLevel>65</TargetMaxLevel>
+               <Factions>7 42 57</Factions>
+               <Hotspots>
+                   <Hotspot X="-9070.405" Y="-334.3627" Z="73.45289" />
+                   <Hotspot X="-8952.246" Y="-385.9102" Z="70.59642" />
+               </Hotspots>          
+           </GrindArea>
+       </SetGrindArea>
+       <GrindTo Condition="Me.Level &lt;= 63" />
+   
+       <Checkpoint Level="63" />
+       <PickUp QuestName="Plants of Zangarmarsh" QuestId="9802" GiverId="17909" />
+       <PickUp QuestName="A Damp, Dark Place" QuestId="9788" GiverId="17956" />
+       <Objective QuestName="Plants of Zangarmarsh" QuestId="9802" Type="CollectItem" ItemId="24401" CollectCount="10" />
+       <Objective QuestName="A Damp, Dark Place" QuestId="9788" Type="CollectItem" ItemId="24411" CollectCount="1" />
+       <TurnIn QuestName="Plants of Zangarmarsh" QuestId="9802" TurnInId="17909" />
+       <TurnIn QuestName="A Damp, Dark Place" QuestId="9788" TurnInId="17956" />
+   </QuestOrder>
+   
+</HBProfile>
